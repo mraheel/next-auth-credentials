@@ -10,10 +10,7 @@ const SignInForm = () => {
     const router = useRouter()
 
     const handleSubmit = async () => {
-        console.log(
-            username,
-            password
-        )
+       
         const response = await signIn("credentials", {
                 username,
                 password,

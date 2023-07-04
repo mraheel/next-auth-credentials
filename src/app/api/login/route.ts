@@ -3,7 +3,7 @@ import { NextResponse, NextRequest } from "next/server";
 export async function POST(req: NextRequest, res: NextResponse) {
     try {
         const body = await req.json();
-        if(body.username == 'raheel@gmail.com' && body.password == "123"){
+        if(body.username == 'raheel@gmail.com'){
             return new Response(JSON.stringify({ user: {id:1, name: 'john'} }), {
                 status: 200,
               });
