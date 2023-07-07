@@ -24,6 +24,7 @@ const NavBar = () =>{
                         </>                        
                     ):(
                         <>
+                            <li> <Link href={'/signup'}>Sign Up</Link> </li>
                             <li> <Link href={'/signin'}>Sign In</Link> </li>
                         </>
                     )
